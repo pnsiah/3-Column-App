@@ -1,0 +1,49 @@
+:root {
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+}
+.single-component {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.btn {
+  color: var(--very-light-gray);
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: 1px solid white;
+  border-radius: 2rem;
+}
+
+@media (max-width: 768px) {
+  .column-wrapper .single-component:nth-child(1) .btn {
+    background-color: var(--transparent-white);
+    color: var(--bright-orange);
+  }
+  .column-wrapper .single-component:nth-child(2) .btn {
+    background-color: var(--transparent-white);
+    color: var(--dark-cyan);
+  }
+  .column-wrapper .single-component:nth-child(3) .btn {
+    background-color: var(--transparent-white);
+    color: var(--very-dark-cyan);
+  }
+}
+
+.svg-logo {
+  padding: 1rem 0.5rem;
+}
+
+.column-title {
+  color: var(--transparent-white);
+}
+
+.column-body {
+  color: var(--very-light-gray);
+  padding: 1rem 0rem;
+}
